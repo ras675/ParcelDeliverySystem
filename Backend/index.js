@@ -3,6 +3,8 @@ const dotenv = require("dotenv");
 const mongoose = require("mongoose");
 const cors = require("cors");
 const authRoute = require("./routes/auth")
+const userRoute = require("./routes/user")
+const parcelRoute = require("./routes/parcel")
 
 dotenv.config();
 
@@ -14,6 +16,8 @@ app.use(express.json());
 
 //Routes
 app.use("/auth",authRoute)
+app.use("/users",userRoute)
+app.use("/parcels",parcelRoute)
 
 //Database Connection
 const DB = process.env.DB;

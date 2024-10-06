@@ -1,6 +1,6 @@
-const mongoose = require("mongoose");
+const mongoose = require('mongoose');
 
-const ParcelSchema = mongoose.Schema(
+const parcelSchema = new mongoose.Schema(
   {
     from: { type: String, require: true },
     to: { type: String, require: true },
@@ -20,4 +20,6 @@ const ParcelSchema = mongoose.Schema(
   }
 );
 
-module.exports = mongoose.model("User", ParcelSchema);
+const Parcel = mongoose.models.Parcel || mongoose.model('Parcel', parcelSchema);
+
+module.exports = Parcel;
