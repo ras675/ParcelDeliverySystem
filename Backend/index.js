@@ -15,9 +15,9 @@ app.use(cors());
 app.use(express.json());
 
 //Routes
-app.use("/auth",authRoute)
-app.use("/users",userRoute)
-app.use("/parcels",parcelRoute)
+app.use("/api/v1/auth",authRoute)
+app.use("/api/v1/users",userRoute)
+app.use("/api/v1/parcels",parcelRoute)
 
 //Database Connection
 const DB = process.env.DB;
