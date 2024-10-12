@@ -129,4 +129,4 @@ const NewUser = () => {
   );
 };
 
-export default NewUsers;
+export default NewUser;
