@@ -7,6 +7,7 @@ import Menu from "./components/Menu";
 import Footer from "./components/Footer";
 import Users  from "./pages/Users";
 import { Outlet } from 'react-router-dom';
+import Login from "./pages/Login";
 
 
 function App() {
@@ -47,10 +48,13 @@ function App() {
         {
           path: "/users",
           element: <Users />,
-        },
+        },      
       ]
-    }
-    
+    },
+    {
+      path: "/login",
+      element: <Login />,
+    },
     
   ])
 
