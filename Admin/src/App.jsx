@@ -8,6 +8,8 @@ import Footer from "./components/Footer";
 import Users  from "./pages/Users";
 import { Outlet } from 'react-router-dom';
 import Login from "./pages/Login";
+import NewParcel from "./pages/NewParcel";
+import NewUsers from "./pages/NewUser";
 
 
 function App() {
@@ -48,7 +50,15 @@ function App() {
         {
           path: "/users",
           element: <Users />,
-        },      
+        },  
+        {
+          path: "/newparcel",
+          element: <NewParcel />,
+        }, 
+        {
+          path: "/newuser",
+          element: <NewUsers />,
+        },   
       ]
     },
     {
