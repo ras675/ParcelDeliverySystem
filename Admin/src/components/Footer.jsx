@@ -11,6 +11,7 @@ const Footer = () => {
       />
        <ul className="m-[20px]">
         <li >Admin</li>
+        <li >Rashikh</li>
         <li>&copy; 2024</li>
       </ul>
     
