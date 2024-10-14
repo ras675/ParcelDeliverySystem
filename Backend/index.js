@@ -1,7 +1,7 @@
 const express = require("express");
 const dotenv = require("dotenv");
 const mongoose = require("mongoose");
-const cors = require("cors");
+const cors = require('cors');
 const authRoute = require("./routes/auth")
 const userRoute = require("./routes/user")
 const parcelRoute = require("./routes/parcel")
@@ -15,6 +15,8 @@ app.use(cors());
 app.use(express.json());
 
 //Routes
+app.use(cors({ origin: 'http://localhost:5173' }));
+
 app.use("/api/v1/auth",authRoute)
 app.use("/api/v1/users",userRoute)
 app.use("/api/v1/parcels",parcelRoute)

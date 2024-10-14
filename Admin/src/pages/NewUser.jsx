@@ -1,9 +1,9 @@
 import { useState } from "react";
-
+import { publicRequest } from "../requestMethods";
 import { ToastContainer, toast } from "react-toastify";
 import 'react-toastify/dist/ReactToastify.css';
 
-const NewUser = () => {
+const NewUsers = () => {
   const [inputs, setInputs] = useState({});
 
   const handleChange = (e) => {
@@ -129,4 +129,4 @@ const NewUser = () => {
   );
 };
 
-export default NewUser;
+export default NewUsers;

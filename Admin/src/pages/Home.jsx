@@ -3,8 +3,8 @@ import { PieChart } from "@mui/x-charts/PieChart";
 
 const Home = () => {
   return (
-    <div >
-       <div className="flex items-center">
+    <div>
+      <div className="flex items-center">
         <div className="flex flex-col text-[#D9D9D9] h-[250px] w-[350px] shadow-lg m-[20px]">
           <div className="flex flex-col items-center justify-center mt-[10%]">
             <h1 className="text-[20px] font-semibold">Users</h1>
@@ -65,14 +65,14 @@ const Home = () => {
           <h2 className="flex px-[20px] text-[#fff]">Recent Users</h2>
 
           <ol className="flex font-semibold flex-col justify-end px-[20px] mt-[10px]  text-[#D9D9D9]">
-            <li>1. Abdul Muqtadir </li>
-            <li>2. Akib Zawad</li>
-            <li>3. Sayad Ibne Azad</li>
+            <li>1. John Doe</li>
+            <li>2. Alex Doe</li>
+            <li>3. Jane Doe</li>
           </ol>
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;

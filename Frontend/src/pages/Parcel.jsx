@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { FaArrowLeft } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import { useLocation } from "react-router-dom";
-
+import { publicRequest } from "../requestMethods";
 
 const Parcel = () => {
   const location = useLocation();
@@ -29,7 +29,7 @@ const Parcel = () => {
         </Link>
         <div className="flex justify-between">
           <div className="flex-1">
-            <ul className="m-3 text-[#555]">
+            <ul className="m-3">
               <li className="mt-3">From: {parcel.from}</li>
               <li className="mt-3">Weigh: {parcel.weight} kg</li>
               <li className="mt-3">Date: {parcel?.date}</li>
@@ -51,7 +51,7 @@ const Parcel = () => {
             </button>
           </div>
           <div className="flex-1 mr-[20%]">
-            <ul className="m-3 text-[#555]">
+            <ul className="m-3">
               <li className="mt-3">Sender Email: {parcel.senderemail}</li>
               <li className="mt-3">Recipient Email: {parcel.recipientemail}</li>
             </ul>
