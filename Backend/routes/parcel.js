@@ -4,7 +4,7 @@ const {createParcel, getAllParcel, updateParcel, getOneParcel, getUserParcel, de
 
 const { verifyToken, verifyTokenAndAuthorization } = require("../middlewares/verifyToken")
 //Add parcel
-router.post("/",verifyToken,createParcel)
+router.post("/",createParcel)
 
 //Get parcel
 router.get("/",verifyTokenAndAuthorization,getAllParcel)
